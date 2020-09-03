@@ -1,0 +1,119 @@
+﻿
+@{
+    ViewBag.Title = "Common_Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    
+    <div class="col-md-5 col-sm-6">
+        <div class="header-profile-img text-center">
+            <img src="Desktop\user.jpg" alt="" class="">
+        </div>
+        <div class="header-profile-detail col-md-8 col-sm-7 col-xs-12">
+            <div class="profile-name">
+                @ViewBag.username
+            </div>
+            <div class="profile-desig">
+                @ViewBag.rolename
+            </div>
+            <div class="profile-desig">
+                @ViewBag.username cygnet-infotech.com
+            </div>
+        </div>
+        <div class="clearfix">
+        </div>
+    </div>
+    <div class="clearfix">
+       
+    </div>
+  
+</div>
+
+<div class="col-sm-2 count-box-ver">
+    <div class="count-box-defult count-box-warning">
+        <div class="visual pull-right">
+            <i class="fa fa-users"></i>
+        </div>
+        <div class="detail pull-left">
+            <div class="desc">Total<br> JD Raised</div>
+            <div class="number">
+                <div class="block cursor-pointer">
+                    <div class="block cursor-pointer">
+                        <span data-value=" @ViewBag.Totalcount" title="click to view total employees" class="counterup checkSessionTimeout headcount-month cursor-pointer"> @ViewBag.Totalcount</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="col-sm-2 count-box-ver">
+    <div class="count-box-defult count-box-lightgreen">
+        <div class="visual pull-right">
+            <i class="fa fa-user-plus"></i>
+        </div>
+        <div class="detail pull-left">
+            <div class="desc">Approved<br> JD </div>
+            <div class="number">
+                <div class="block cursor-pointer">
+                    <div class="block cursor-pointer">
+                        <span data-value=" @ViewBag.Approvedcount" title="click to view total employees" class="counterup checkSessionTimeout headcount-month cursor-pointer"> @ViewBag.Approvedcount</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<div class="col-sm-2 count-box-ver">
+    <div class="count-box-defult count-box-lightcoral">
+        <div class="visual pull-right">
+            <i class="fa fa-user-times"></i>
+        </div>
+        <div class="detail pull-left">
+            <div class="desc">Pending<br> JD </div>
+            <div class="number">
+                <div class="block cursor-pointer">
+                    <div class="block cursor-pointer">
+                        <span data-value=" @ViewBag.Pendingcount" title="click to view total employees" class="counterup checkSessionTimeout headcount-month cursor-pointer"> @ViewBag.Pendingcount</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="col-sm-2 count-box-ver">
+    <div class="count-box-defult count-box-lightgreen">
+        <div class="visual pull-right">
+            <i class="fa fa-user-plus"></i>
+        </div>
+        <div class="detail pull-left">
+            <div class="desc">Rejected<br> JD </div>
+            <div class="number">
+                <div class="block cursor-pointer">
+                    <div class="block cursor-pointer">
+                        <span data-value=" @ViewBag.Rejectedcount" title="click to view total employees" class="counterup checkSessionTimeout headcount-month cursor-pointer"> @ViewBag.Rejectedcount</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+

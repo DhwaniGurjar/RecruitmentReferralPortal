@@ -1,0 +1,327 @@
+﻿@using RecruitmentPortal.Zest.Common.Helper
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="~/CSS/images/favicon.ico" type="image/x-icon">
+    <!--title-->
+
+    <title>@ViewBag.Title</title>
+    <!--CSS starts-->
+    <!-- Datatable css -->
+    <link rel="stylesheet" type="text/css" href="~/CSS/datatable/responsive.bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/CSS/datatable/dataTables.bootstrap.css" />
+    <!-- MCustomScrollbar Css -->
+    <link rel="stylesheet" type="text/css" href="~/CSS/jquery/jquery.mCustomScrollbar.css" />
+    <!-- Old Icon Css -->
+    <link href="~/CSS/new-icon-font.css" rel="stylesheet" />
+    <!--Common Css -->
+    <link rel="stylesheet" href="~/CSS/styles.css" type="text/css" />
+    <!--Jquery-confirm Css -->
+    <link href="~/CSS/jquery/jquery-confirm.css" rel="stylesheet" />
+
+    <!--JS starts-->
+    <!-- Jquery js -->
+
+
+    <script type="text/javascript" src="~/JsScript/PageScripts/HRIMS_Secure/jquery-2.2.1.min.js"></script>
+    <!-- <script  type="text/javascript" src="js/less-min.js"></script> -->
+    <!-- Bootstrap js -->
+    <script type="text/javascript" src="~/JsScript/PageScripts/HRIMS_Secure/bootstrap.js"></script>
+    <!-- Datatable js -->
+    <script type="text/javascript" src="~/JsScript/PageScripts/HRIMS_Secure/datatable/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="~/JsScript/PageScripts/HRIMS_Secure/datatable/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/JsScript/PageScripts/HRIMS_Secure/datatable/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="~/JsScript/PageScripts/HRIMS_Secure/datatable/responsive.bootstrap.min.js"></script>
+    <!-- Custome scroll bar for side bar -->
+    <script type="text/javascript" src="~/JsScript/PageScripts/HRIMS_Secure/jquery.mCustomScrollbar.min.js"></script>
+    <!-- Charts  -->
+    <script type="text/javascript" src="~/JsScript/PageScripts/HRIMS_Secure/Chart.js"></script>
+    <script type="text/javascript" src="~/JsScript/PageScripts/HRIMS_Secure/Chart.min.js"></script>
+    <script type="text/javascript" src="~/JsScript/PageScripts/HRIMS_Secure/Chart.js"></script>
+    <script type="text/javascript" src="~/JsScript/PageScripts/HRIMS_Secure/Chart.HorizontalBar.js"></script>
+    <script type="text/javascript" src="~/JsScript/PageScripts/HRIMS_Secure/chartData.js"></script>
+    <!-- Validator
+    <script  type="text/javascript"  src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>-->
+    <!--Date formating JS-->
+    <script type="text/javascript" src="../JsScript/moment.min.js"></script>
+    <!-- Chosen -->
+    <script type="text/javascript" src="../JsScript/PageScripts/HRIMS_Secure/chosen.jquery.min.js"></script>
+    <!-- Google org chart -->
+    <script type="text/javascript" src="~/JsScript/PageScripts/HRIMS_Secure/loader.js"></script>
+    <!-- Modernizr -->
+    <script type="text/javascript" src="../JsScript/PageScripts/HRIMS_Secure/modernizr.js"></script>
+    <!-- Bootstrap File Jquery -->
+    <script type="text/javascript" src="../JsScript/ThirdPartyPlugins/bootstrap-filestyle.min.js"></script>
+    <!-- Custom designer js -->
+    <script type="text/javascript" src="../JsScript/general.js"></script>
+    <!--Script ends-->
+    <!--Custom MasterPageCims -->
+    <script type="text/javascript" src="../JsScript/PageScripts/MasterPageCims.js"></script>
+    <!--Toastr -->
+    <link href="../CSS/TaskImport/toastr.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="../JsScript/angular/toastr.min.js"></script>
+    <!--Boostrap Timepicker-->
+    <script type="text/javascript" src="~/JsScript/PageScripts/HRIMS_Secure/bootstrap-timepicker.js"></script>
+    <script type="text/javascript" src="../JsScript/ThirdPartyPlugins/jquery-confirm.js"></script>
+
+    @*<script src="~/Scripts/jquery.signalR-2.2.1.js"></script>
+        <script src="~/signalr/hubs"></script>
+        <script src="~/JsScript/PageScripts/Notification/Notification.js"></script>*@
+
+    <style>
+        .notify-loader {
+            background: rgba(255, 255, 255, 0.71);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            z-index: 999;
+        }
+
+            .notify-loader img {
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+            }
+    </style>
+</head>
+<body>
+    <!--loader start-->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="after"></div>
+            <div class="before"></div>
+        </div>
+    </div>
+
+    <!--loader end-->
+    <header>
+        <!-- Navbar Starts -->
+        <nav id="navbar-main" class="navbar col-xs-12">
+            <div class="row">
+                <div class="col-sm-5 col-md-4 col-xs-4">
+                    <div class="brand-logo">
+                        <a href="~/Dashboard/Index" title="Logo">
+                            <img src="~/CSS/images/login-logo.png" style="height: 37px;" alt="Logo" title="Logo">
+                        </a>
+
+                        <div class="selector-button-menu fa fa-bars hidden-xs"></div>
+                    </div>
+                </div>
+                <div class="col-sm-7 col-md-8 col-xs-8">
+                    <div id="notification"></div>
+                    <div class="row">
+                        <div class="navbar-right  col-sm-12">
+                            <div id="navbar" class="navbar-collapse">
+                                <ul class="nav">
+                                    <li class="dropdown hidden-xs  pull-right">
+                                        <a aria-expanded="false" title="User" aria-haspopup="true" role="button" data-toggle="dropdown" class="dropdown-toggle" href="javascript:void(0)">
+                                            <img alt="" src="~/CSS/images/User.PNG" class="img-circle img-responsive profile-thumb img-thumbnail">
+                                            <span class="caret"></span>
+
+                                        </a>
+                                        <ul class="dropdown-menu">
+
+                                            <li role="presentation"><a data-id="UserProfile" class="clsProfile menuclick UserProfile"><i class="fa fa-user"></i>User Profile</a></li>
+                                            <li role="presentation">
+                                                <a ToolTip="Sign Out" id="" href="@Url.Action("Logout","User")"><i class="fa fa-power-off text-danger"></i>Sign Out</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="hidden-xs pull-right" id="btn_filter" style="display: none">
+                                        <a href="javascript:void(0)" title="Filter" class="" onclick="$('#comp_filter').click();">
+                                            <div class="header-icon">
+                                                <i class="fa fa-filter fa-2x"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="hidden-xs pull-right" style="display: none">
+                                        <a href="javascript:void(0)" title="Suggestion" class="selector-button">
+                                            <div class="header-icon">
+                                                <i class="fa fa-comment fa-2x"></i>
+                                                <i class="fa fa-user fa-2x"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="dropdown-extended dropdown-notification hidden-xs pull-right">
+                                        <a href="javascript:void(0)" title="Alert" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false" aria-expanded="true">
+                                            <div class="header-icon">
+                                                <i class="fa fa-bell fa-2x"></i>
+                                                <span class="badge-danger alert-count badge notificationCount"></span>
+                                            </div>
+                                        </a>
+                                        <ul class="dropdown-menu">
+
+                                            <li>
+                                                <div class="text-center notify-loader"><img alt="" src="/images/gallery-loading.gif" style="width: 25px;"></div>
+                                                <div class="" style="max-height:300px;" id="notificationScroll">
+
+                                                    <ul class="dropdown-menu-list scroller" id="ulNotifications"></ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="selector-button-mobile-nav pull-right">
+                                        <a class="visible-xs selector-button-menu fa fa-bars" href="javascript:void(0)" title="Menu"></a>
+                                    </li>
+                                    <li class="hidden-xs col-sm-5  pull-right">
+                                        <div id="divProjectList" class="switch-project  fleft">
+                                            <div class="input-group col-xs-12">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fav-project col-sm-5 pull-right">
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <!-- Navbar Ends -->
+    </header>
+    <!-- Sidebar Starts -->
+    <div class="side-bar-container">
+        <aside class="page-sidebar ">
+            <div class="custom-scroll">
+                <div id="cssmenu1" class="user-profile cssmenu1 visible-xs">
+                    <ul>
+                        <li class="active has-sub">
+                            <a href="javascript:void(0);" title="Employee">
+                                <img id="imgEmployee" class="img-circle mCS_img_loaded" alt="" src="">
+                                <span>
+                                </span><i class="glyphicon glyphicon-chevron-down pull-right"></i>
+                            </a>
+                            <div class="clearfix"></div>
+                            <ul class="profilemenu">
+                                <li role="presentation"><a data-id="UserProfile" class="clsProfile menuclick UserProfile checkTempDataTimeout"><i class="fa fa-user"></i>User Profile</a></li>
+                                <li role="presentation">
+                                    <a ToolTip="Sign Out" id="" class="checkTempDataTimeout" href="@Url.Action("Logout","User")"><i class="fa fa-power-off"></i>Sign Out</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="main-menu">
+                    <div class="cssmenu" id="cssmenu">
+                        <div class="dxmLite dxm-ltr">
+                            <div class="dxm-main dxm-horizontal" id="UcMenu1_adminMenu">
+                                <ul class="dx dxm-image-l dxm-noImages">
+
+                                    @if (Session["role"] != null &&
+                                        Session["role"].ToString() != ((int)UserRole.Employee).ToString())                                        
+                                    {
+                                        <li class="dxm-item dxm-tmpl dashboard-menu">
+                                            <a title="Dashboard" class="haschild Manage" href="javascript:void(0)"><i class="fa fa-dashboard"></i><span>Dashboard</span><span class="caret-1"></span></a>
+                                            <ul>
+                                                <li><a title="Common_Dashboard" href="@Url.Action("JobDashboard", "Common_Dashboard")"><span>Dashboard</span></a></li>
+                                            </ul>
+                                        </li>
+                                    }
+
+                                    @if (Session["role"] != null &&
+                                        Session["role"].ToString() == ((int)UserRole.Employee).ToString())
+                                    {
+                                        <li class="dxm-item dxm-tmpl dashboard-menu">
+                                            <a title="Dashboard" class="haschild Manage" href="javascript:void(0)"><i class="fa fa-dashboard"></i><span>Dashboard</span><span class="caret-1"></span></a>
+                                            <ul>
+                                                <li><a title="Common_Dashboard" href="@Url.Action("Dashboard", "Chart")"><span>Dashboard</span></a></li>
+                                            </ul>
+                                        </li>
+                                    }
+
+
+                                    @if (Session["role"] != null &&
+                                        Session["role"].ToString() == ((int)UserRole.LineManager).ToString() ||
+                                        Session["role"].ToString() == ((int)UserRole.HrHead).ToString())
+
+                                    {
+                                        <li class="dxm-item dxm-tmpl performance-management-system-menu">
+                                            <a title="Create Jobs" class="haschild Manage" href="javascript:void(0)"><i class="fa fa-modx"></i><span>Create Jobs</span><span class="caret-1"></span></a>
+                                            <ul>
+                                                <li><a title="Edit Jobs" href="@Url.Action("Create", "Jobs")"><span>Create JD</span></a></li>
+                                            </ul>
+                                        </li>
+                                    }
+
+                                    @if (Session["role"] != null && Session["role"].ToString() != ((int)UserRole.Employee).ToString())
+                                    {
+                                        <li class="dxm-item dxm-tmpl attendance-policies-menu">
+                                            <a title="View Jobs" class="haschild Manage" href="javascript:void(0)"><i class="fa fa-wpforms"></i><span>View Jobs</span><span class="caret-1"></span></a>
+                                            <ul>
+                                                <li><a title="Job List" href="@Url.Action("JobList", "Jobs")"><span>Job List</span></a></li>
+                                            </ul>
+                                        </li>
+                                    }
+                                    @if (Session["role"] != null && Session["role"].ToString() == ((int)UserRole.Employee).ToString())
+                                    {
+
+                                        <li class="dxm-item dxm-tmpl reports-menu">
+                                            <a title="Open Positions" class="haschild Manage " href="javascript:void(0)"><i class="fa fa-black-tie"></i><span>Open Positions</span><span class="caret-1"></span></a>
+                                            <ul>
+                                                <li><a title="View Vacant Positions" href="@Url.Action("JobPositionList", "Jobs")"><span>View Vacant Position</span></a></li>
+                                            </ul>
+                                        </li>
+                                    }
+
+                                    @if (Session["role"] != null &&
+                                        Session["role"].ToString() == ((int)UserRole.Employee).ToString() ||
+                                        Session["role"].ToString() == ((int)UserRole.HR).ToString())
+                                    {
+                                        <li class="dxm-item dxm-tmpl exit-management">
+                                            <a title="My Referrals" class="haschild Manage " href="javascript:void(0)"><i class="fa fa-user"></i><span>My Referrals <span> <span class="caret-1"></span></a>
+                                            <ul>
+                                                <li><a title="Referral List" href="@Url.Action("MyReferralList", "Referral")"><span>Referral List</span></a></li>
+                                            </ul>
+                                        </li>
+                                    }
+                                    @*<li class="dxm-item dxm-tmpl reports-menu">
+                                        <a title="Rewards" class="haschild Manage " href="javascript:void(0)"><i class="fa fa-yelp"></i><span>Rewards </span><span class="caret-1"></span></a>*@
+                                    @*<ul>
+                                            <li><a title="Opportunities" href="opportunities.html"><span>Opportunities</span></a></li>
+                                            <li><a title="Headcount" href="pinsandapproval.html"><span>PINs &amp; Approval </span></a></li>
+
+                                        </ul>*@
+                                    @*</li>
+                                        <li class="dxm-item dxm-tmpl reports-menu">
+                                            <a title="Profile" class="haschild Manage " href="javascript:void(0)"><i class="fa fa-pied-piper-alt"></i><span>Profile </span><span class="caret-1"></span></a>*@
+                                    @*<ul>
+                                            <li><a title="Opportunities" href="opportunities.html"><span>Opportunities</span></a></li>
+                                            <li><a title="Headcount" href="pinsandapproval.html"><span>PINs &amp; Approval </span></a></li>
+
+                                        </ul>*@
+
+                                </ul>
+                                <!--  active -> active -> activeMenuItem -->
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+            <!--Copyright section start-->
+            <footer>
+                <div class="col-sm-12">
+                    <span class="copy-right-c">©</span><span class="copy-right-section">
+                        © 2018, Cygnet Infotech,<br>
+                        All Rights Reserved
+                    </span>
+                </div>
+            </footer>
+            <!--Copyright section end-->
+        </aside>
+    </div>
+    <!-- Sidebar Ends -->
+
+    <div class="innerpage-wrap container-wrap">
+        @RenderBody()
+        @RenderSection("scripts", required: false)
+    </div>
+</body>

@@ -1,0 +1,146 @@
+﻿@model IEnumerable<RecruitmentPortal.Zest.Common.ServiceModels.JobDescriptionResult>
+@{
+    ViewBag.Title = "JobList";
+}
+<div class="page-header">
+    <div class="row">
+        <div class="col-sm-6" style="padding-bottom:10px">
+            <div class="col-sm-12">
+                <h1> View Requirements</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p>
+    <button type="submit" id="btnSubmit" class="btn btn-success ic-save" style="margin-left:15px;">
+        @Html.ActionLink("Create Job", "Create", "Jobs", new { @class = "btn", style = "color:white" })
+    </button>
+</p>
+<div class="common-table-style" style="width:93%; margin-left:15px">
+    <div>
+        <table class="table common-table" cellspacing="0" align="center" id="MainContent_gvEmp" style="width:100%;border-collapse:collapse;">
+            <tr>
+                <th align="center" scope="col" style="width:10%; color:blue; text-align:center">
+                    <a href="">
+                        @Html.DisplayNameFor(model => model.Job_Title)
+                    </a>
+                </th>
+                <th align="center" scope="col" style="width:10%; text-align:center">
+                    <a href="">
+                        @Html.DisplayNameFor(model => model.Resource_Designation)
+                    </a>
+                </th>
+                @*<th align="center" scope="col" style="width:15%; color:blue; text-align:center">
+                        @Html.DisplayNameFor(model => model.Job_Description)
+                    </th>*@
+                @*<th>
+                        @Html.DisplayNameFor(model => model.Essential_Skills)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Desired_Skills)
+                    </th>*@
+                <th align="center" scope="col" style="width:10%; text-align:center">
+                    <a href="">
+                        @Html.DisplayNameFor(model => model.Job_Type)
+                    </a>
+                </th>
+                <th align="center" scope="col" style="width:10%; text-align:center">
+                    <a href="">
+                        @Html.DisplayNameFor(model => model.Department)
+                    </a>
+                </th>
+                <th align="center" scope="col" style="width:10%; text-align:center">
+                    <a href="">
+                        @Html.DisplayNameFor(model => model.Priority)
+                    </a>
+                </th>
+                <th align="center" scope="col" style="width:10%; text-align:center">
+                    <a href="">
+                        @Html.DisplayNameFor(model => model.Job_Experience)
+                    </a>
+                </th>
+                <th align="center" scope="col" style="width:10%; text-align:center">
+                    <a href="">
+                        @Html.DisplayNameFor(model => model.Status)
+                    </a>
+                </th>
+                @*<th>
+                        @Html.DisplayNameFor(model => model.Other_Skills)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Remarks)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Status)
+                    </th>*@
+                <th>
+                    <a href="">
+                        Actions
+                    </a>
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td align="center">
+                        @Html.DisplayFor(modelItem => item.Job_Title)
+                    </td>
+                    <td align="center">
+                        @Html.DisplayFor(modelItem => item.Resource_Designation)
+                    </td>
+                    @*<td align="center">
+                            @Html.DisplayFor(modelItem => item.Job_Description)
+                        </td>*@
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.Essential_Skills)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Desired_Skills)
+                        </td>*@
+                    <td align="center">
+                        @Html.DisplayFor(modelItem => item.Job_Type)
+                    </td>
+                    <td align="center">
+                        @Html.DisplayFor(modelItem => item.Department)
+                    </td>
+                    <td align="center">
+                        @Html.DisplayFor(modelItem => item.Priority)
+                    </td>
+                    <td align="center">
+                        @Html.DisplayFor(modelItem => item.Job_Experience)
+                    </td>
+                    <td align="center">
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </td>
+                    @*<td>
+                            @Html.DisplayFor(modelItem => item.Other_Skills)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Remarks)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </td>*@
+                    <td>
+                        @*@Html.ActionLink("Edit", "Edit", new { id = item.JD_Id }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.JD_Id }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.JD_Id })*@
+
+                        <button type="submit" id="btnSubmit" class="btn btn-success ic-save">
+                            @Html.ActionLink("Edit", "Update", "Jobs", new { JD_Id = item.JD_Id }, new { @class = "btn", style = "color:white" })
+                        </button>
+                        <button type="button" id="btnCancel" class="btn btn-warning ic-reset">
+                            @Html.ActionLink("Details", "SingleJobDescriptionList", "Jobs", new { JobId = item.JD_Id },new { @class = "btn", style = "color:white" })
+                        </button>
+                        <button type="button" id="btnCancel" class="btn btn-danger ic-danger">
+                            @Html.ActionLink("Delete", "Delete", "Jobs", new { JD_Id = item.JD_Id },new { @class = "btn", style = "color:white" })
+                        </button>
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>

@@ -1,0 +1,123 @@
+﻿@model IEnumerable<RecruitmentPortal.Zest.Common.ServiceModels.MyReferralResult>
+@{
+    ViewBag.Title = "MyReferralList";
+}
+
+<div class="page-header">
+    <div class="row">
+        <div class="col-sm-6" style="padding-bottom:10px">
+            <div class="col-sm-12">
+                <h1>My Referral List</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<p>
+    @*@Html.ActionLink("Create New", "Create")*@
+</p>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="common-table-style">
+                <div>
+                    <table class="table common-table" cellspacing="0" id="MainContent_gvEmp" style="width:100%;border-collapse:collapse;">
+
+                        <tr>
+                            <th scope="col" style="width:5%;  text-align:center">
+                                <a href="">@Html.DisplayNameFor(model => model.Candidate_Name)</a>
+                            </th>
+                            <th scope="col" style="width:18%; text-align:center">
+                                <a href="">@Html.DisplayNameFor(model => model.Candidate_Designation)</a>
+                            </th>
+                            <th scope="col" style="width:15%;text-align:center">
+                                <a href="">@Html.DisplayNameFor(model => model.Contact_Date)</a>
+                            </th>
+                            <th scope="col" style="width:10%;text-align:center">
+                                <a href=""> @Html.DisplayNameFor(model => model.Status)</a>
+                            </th>
+                            <th scope="col" style="width:15%; text-align:center">
+                                <a href="">@Html.DisplayNameFor(model => model.dtCreatedOn)</a>
+                            </th>
+                            <th scope="col" style="width:15%;text-align:center">
+                                <a href="">@Html.DisplayNameFor(model => model.dtModifiedOn)</a>
+                            </th>
+                            <th scope="col" style="width:10%; text-align:center">
+                                <a href="">@Html.DisplayNameFor(model => model.CreatedBy)</a>
+                            </th>
+                            <th scope="col" style="width:35%;text-align:center">
+                                <a href="">@Html.DisplayNameFor(model => model.ModifiedBy)</a>
+                            </th>
+
+                        </tr>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td align="center">
+                                    @Html.DisplayFor(modelItem => item.Candidate_Name)
+                                </td>
+                                <td align="center">
+                                    @Html.DisplayFor(modelItem => item.Candidate_Designation)
+                                </td>
+                                <td align="center">
+                                    @Html.DisplayFor(modelItem => item.Contact_Date)
+                                </td>
+                                <td align="center">
+                                    @if (Session["role"].ToString() == "3")
+                                    {
+                                        @Html.EditorFor(modelItem => item.Status)
+                                    }
+                                    @if (Session["role"].ToString() == "5")
+                                    {
+                                        @Html.DisplayFor(modelItem => item.Status)
+                                    }
+                                </td>
+                                <td align="center">
+                                    @Html.DisplayFor(modelItem => item.dtCreatedOn)
+                                </td>
+                                <td align="center">
+                                    @if (Session["role"].ToString() == "3")
+                                    {
+                                        @Html.EditorFor(modelItem => item.dtModifiedOn)
+                                    }
+                                    @if (Session["role"].ToString() == "5")
+                                    {
+                                        @Html.DisplayFor(modelItem => item.dtModifiedOn)
+                                    }
+                                </td>
+                                <td align="center">
+                                    @Html.DisplayFor(modelItem => item.CreatedBy)
+                                </td>
+                                <td align="center">
+                                    @if (Session["role"].ToString() == "3")
+                                    {
+                                        @Html.EditorFor(modelItem => item.ModifiedBy)
+                                    }
+                                    @if (Session["role"].ToString() == "5")
+                                    {
+                                        @Html.DisplayFor(modelItem => item.ModifiedBy)
+                                    }
+                                </td>
+                                <td>
+                                    @if (Session["role"].ToString() == "3")
+                                    {
+                                <input type="submit" value="Save" class="btn btn-default" />
+                                    }
+                                @*@Html.ActionLink("Edit", "Edit", new { id = item.Sr_No }) |
+    @Html.ActionLink("Details", "Details", new { id = item.Sr_No }) |
+    @Html.ActionLink("Delete", "Delete", new { id = item.Sr_No })*@
+                                </td>
+                            </tr>
+                        }
+
+                    </table>
+                    
+                </div>
+            </div>
+}

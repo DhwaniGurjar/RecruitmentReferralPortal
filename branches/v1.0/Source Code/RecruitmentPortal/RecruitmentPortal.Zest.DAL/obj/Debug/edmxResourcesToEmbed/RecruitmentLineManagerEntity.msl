@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RecruitmentLineManagerZestDbModelStoreContainer" CdmEntityContainer="RecruitmentLineManagerEntities">
+    <EntitySetMapping Name="dbJobDescriptions">
+      <EntityTypeMapping TypeName="RecruitmentLineManager.Zest.DbModel.dbJobDescription">
+        <MappingFragment StoreEntitySet="dbJobDescription">
+          <ScalarProperty Name="JobDescriptionId" ColumnName="JobDescriptionId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ResourceDesignation" ColumnName="ResourceDesignation" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EssentialSkills" ColumnName="EssentialSkills" />
+          <ScalarProperty Name="DesiredSkills" ColumnName="DesiredSkills" />
+          <ScalarProperty Name="JobType" ColumnName="JobType" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="JobExperience" ColumnName="JobExperience" />
+          <ScalarProperty Name="OtherSkills" ColumnName="OtherSkills" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbUsers">
+      <EntityTypeMapping TypeName="RecruitmentLineManager.Zest.DbModel.dbUser">
+        <MappingFragment StoreEntitySet="dbUser">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

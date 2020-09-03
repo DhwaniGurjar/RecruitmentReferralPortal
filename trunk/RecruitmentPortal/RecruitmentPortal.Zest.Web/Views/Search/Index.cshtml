@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Search Page";
+}
+
+<body style="vertical-align:middle;">
+    <div style="padding:30px">
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="container text-center glyphicon-align-center">
+            <h1>Resume Parser Search Page</h1>
+            <div>
+                <p>Enter the search keywords in the provided fields to search for the matching candidates as per requirement</p>
+            </div>
+            <div>
+                <p class="text-info">Note:- The fields that are not relevant are to be left empty.</p>
+            </div>
+            <br />
+            <div>
+                @*@Html.ActionLink("Go to the Search Form", "SearchForm", "Search")*@
+
+                <br />
+                <div class="containe text-center">
+                    <button class="btn btn-primary" onclick="@("window.location.href='" + @Url.Action("SearchForm", "Search") + "'");">
+                        <span class="glyphicon glyphicon-search"></span>
+                        Go to the Search Form
+                    </button>
+                    <button class="btn btn-primary" style="margin-left:20px" onclick="@("window.location.href='" + @Url.Action("AdvancedSearch", "Search") + "'");">
+                        <span class="glyphicon glyphicon-search"></span>
+                        Advanced Search
+                    </button>
+                </div>
+
+                @*<button type="button" class="btn btn-primary" onclick=redirectOnClickToSearchForm()>
+                <span class="glyphicon glyphicon-search"></span>
+                Go to the Search Form
+            </button>
+            <button type="button" class="btn btn-primary" onclick=redirectOnClickToAdvancedSearch()>
+                <span class="glyphicon glyphicon-search"></span>
+                Advanced Search
+            </button>
+            <script type="text/javascript">
+                function redirectOnClickToSearchForm() {
+                    document.location = 'SearchForm';
+                }
+                function redirectOnClickToAdvancedSearch() {
+                    document.location = 'AdvancedSearch';
+                }
+            </script>*@
+            </div>
+        </div>
+    </div>
+</body>

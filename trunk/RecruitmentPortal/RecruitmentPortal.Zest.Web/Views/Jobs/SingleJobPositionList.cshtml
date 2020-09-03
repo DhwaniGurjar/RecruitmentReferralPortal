@@ -1,0 +1,85 @@
+﻿@model RecruitmentPortal.Zest.Common.ServiceModels.SingleJobPositionResult
+
+
+@{
+    ViewBag.Title = "Details";
+}
+<div class="page-header">
+    <div class="row">
+    <div class="col-sm-6">
+        <div class="col-sm-12">
+           <h1>Details</h1>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="row form-content">
+    <div class="clearfix"></div>
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="panel panel-collapse-defult active">
+                    <div id="collaspseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <form class="form-horizontal">
+                                <div class="col-sm-9">
+                                    <div class="col-sm-12">
+                                    <div class="row">
+                                    <div class="form-group">
+                                    <p><label class="col-sm-3">Job Title :</label>
+
+                                       @Html.DisplayFor(model => model.Job_Title)</p>
+                                   
+                                        <p>
+                                            <label class="col-sm-3">Resource Designation :</label>
+
+                                            @Html.DisplayFor(model => model.Resource_Designation)
+                                        </p>
+                                    
+                                    <p><label class="col-sm-3"> Job Description :</label>
+
+                                        @Html.DisplayFor(model => model.Job_Description)
+                                    </p>
+                                    <p><label class="col-sm-3">  Essential Skills :</label>
+
+                              
+                                        @Html.DisplayFor(model => model.Essential_Skills)
+                                    </p>
+                                    <p><label class="col-sm-3">Desired Skills :</label>
+                                   
+                                        @Html.DisplayFor(model => model.Desired_Skills)
+                                    </p>
+                                    <p><label class="col-sm-3">  Job Type :</label>
+                                      
+                                        @Html.DisplayFor(model => model.Job_Type)
+                                    </p>
+                                    <p><label class="col-sm-3">     Department :</label>
+                                    
+                                        @Html.DisplayFor(model => model.Department)
+                                    </p>
+
+                                    <p><label class="col-sm-3">Job Experience :</label>
+                                        
+                                        @Html.DisplayFor(model => model.Job_Experience)
+                                    </p>
+                                    <p><label class="col-sm-3"> Other Skills:</label>
+                         
+                                        @Html.DisplayFor(model => model.Other_Skills)
+                                    </p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+

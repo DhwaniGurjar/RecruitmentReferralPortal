@@ -1,0 +1,211 @@
+﻿@model RecruimentPortal.Zest.Web.Models.UserAccount
+
+@{
+    ViewBag.Title = "Login";
+}
+@{
+    Layout = null;
+}
+
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="shortcut icon" href="~/CSS/images/favicon.ico" type="image/x-icon">
+
+    <title>Login</title>
+
+    <link href="/CSS/login.css" rel="stylesheet">
+    <link href="/CSS/datepicker-jquery-ui.css" rel="stylesheet">
+    <script src="/JsScript/PageScripts/HRIMS/jquery-2.2.1.min.js"></script>
+    <script src="/JsScript/PageScripts/HRIMS/less-min.js"></script>
+    <script src="/JsScript/PageScripts/HRIMS/datepicker-jquery-1.10.2.js"></script>
+    <script src="/JsScript/PageScripts/HRIMS/datepicker-jquery-ui
+<a href="~/Views/User/Index.cshtml">~/Views/User/Index.cshtml</a>.js"></script>
+    <script src="/JsScript/PageScripts/HRIMS/UserLogin.js"></script>
+    <script>
+        $(document).on("ready", function () {
+            $(".bg-primary").height($(document).height());
+
+            $("#chat").click(function () {
+                $(this).hide();
+                $('#chat-close').show();
+                $('.chat-bot').addClass('active');
+            })
+            $("#chat-close").click(function () {
+                $(this).hide();
+                $('#chat').show();
+                $('.chat-bot').removeClass('active');
+            })
+
+        });
+        $(window).on("resize", function () {
+            $(".bg-primary").height($(document).height());
+
+        });
+    </script>
+</head>
+
+<body style="">
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="after"></div>
+            <div class="before"></div>
+        </div>
+    </div>
+    <div class="login-wrapper">
+
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-sm-5 hidden-xs bg-primary" style="height: 637px;">
+                    <div class="row">
+                        <div class="login-set">
+
+                            <div class="text-center login-bulb">
+                                <img src="~/CSS/images/login-bulb.png" alt="login-bulb">
+                            </div>
+                           
+                            <div class="col-sm-12">
+                                <div class="quote">
+
+                                    <center>A solution that transforms your HR to profit center</center>
+
+                                </div>
+                            </div>
+
+                            <div class="text-center copy-right">©  A Cygnet Infotech Solution</div>
+                        </div>
+                    </div>
+                    <style>
+                        .chat-bot {
+                            position: fixed;
+                            bottom: -406px;
+                            right: 0;
+                            z-index: 999;
+                            transition: all 0.5s ease;
+                        }
+
+                            .chat-bot.active {
+                                position: fixed;
+                                bottom: -9px;
+                                right: 0;
+                                z-index: 999;
+                                transition: all 0.5s ease;
+                            }
+                    </style>
+
+                </div>
+                <div class="col-sm-7 col-xs-12">
+                    <div class="row">
+                        <div class="login-links">
+
+                            <div class="col-md-7 col-sm-12">
+
+                                <div class="logo">
+                                    <a href="http://www.cygnet-infotech.com/hrims" title="logo">
+                                        <img src="~/CSS/images/login-logo.png" alt="logo">
+                                    </a>
+                                   
+                                </div>
+                                <div id="resultForm">
+                                    <div class="login-box">
+
+
+
+                                        <form action="" method="post">
+                                            
+                                            @*@Html.AntiForgeryToken()*@
+                                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                                            <label class="label-set">User Name</label>
+                                            <input title="Username" id="username" type="text" placeholder="Username" name="username" data-val-required="Please Enter Username" data-val="true" required="">
+                                           
+                                            <label class="label-set">Password</label>
+                                            <input title="Password" id="password" type="password" placeholder="Password" name="password" data-val-required="Please Enter Password" data-val="true" required="">
+                                            
+                                            <div class="clearfix margin-top-15"></div>
+                                            <div class="readio-area">
+
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+
+                                                            <div class="radio radio-primary">
+                                                                <input type="radio" name="AuthenticationType" value="AD" id="Directory">
+                                                                <label class="login-radio-text" for="Directory"> Windows Authentication by Credential</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+
+                                                            <div class="radio radio-primary">
+                                                                <input type="radio" value="FORM" checked="" name="AuthenticationType" id="Forms">
+                                                                <label class="login-radio-text" for="Forms"> Form Based Authentication </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+
+
+                                            </div>
+
+                                            <div class="col-sm-11">
+                                                <div class="row">
+                                                    <button title="Login" class="login-btn btn-block" href="@Url.Action("Login", "User")">LOGIN</button>
+                                                </div>
+                                            </div>
+                                            @*<div id="passwordOpts">
+                                                <span class="forgot-password" id="span_forgetPassword"><a title="forgot password" href="javascript:void(0)" id="ForgotPassword">Forgot Password?</a></span>
+                                                <span class="forgot-password" id="span_changePassword" style="display: none;"><a title="change password" href="javascript:void(0)" id="ChangePassword">Change Password</a></span>
+                                            </div>*@
+                                        </form>
+
+                                    </div>
+                                    <script type="text/javascript">
+    $(document).ready(function () {
+        if ($('input[name=AuthenticationType]:checked').val() == 'WINDOWS') {
+            $('#username').removeAttr('required');
+            $('#password').removeAttr('required');
+            $('#divDoman').hide();
+            $('#passwordOpts').hide();
+        }
+        else {
+            $('#passwordOpts').show();
+            if ($('input[name=AuthenticationType]:checked').val() == 'AD') {
+                $('#span_forgetPassword').hide();
+                $('#span_changePassword').show();
+                $('#divDoman').show();
+            }
+            else {
+                $('#span_forgetPassword').show();
+                $('#span_changePassword').hide();
+                $('#divDoman').hide();
+            }
+            $('#username').prop('required', true);
+            $('#password').prop('required', true);
+        }
+    });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

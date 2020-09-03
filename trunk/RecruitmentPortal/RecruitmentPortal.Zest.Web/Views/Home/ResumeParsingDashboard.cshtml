@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Resume Pool Directory";
+}
+<div style="padding:30px">
+
+    <br />
+    <br />
+    <br />
+    <h1 class="text-center" style="color:black">Select the Resume Pool Directory</h1>
+    <br />
+    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+    {
+
+        <div class="container text-center ">
+            <div class="form-groupx">
+                <label for="resumePoolPath">Enter the Resume Pool Folder Path Here</label>
+                <span class="glyphicon glyphicon-folder-open"></span>
+                @*<i class="fa fa-folder-open"></i>*@
+                <br />
+                <br />
+                <div>
+                    <input name="resumePoolPath" style="margin-right:auto;margin-left:auto" type="text" class="form-control input-lg text-center" id="resumePoolPath" aria-describedby="helpText" value="C:\Users\doshiparth\Documents\Resume Test Cases" placeholder="Resume Pool">
+                    <br />
+                    <p id="helpText" class="form-text text-info">
+                        The Resumes for parsing will be selected from this folder one by one.
+                    </p>
+                </div>
+            </div>
+
+            @*<div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" name="selectedFolder" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" multiple directory webkitdirectory>
+                    <small id="fileHelp" class="form-text text-muted">Select your folder from here.</small>
+                </div>*@
+
+            @*<input type="file" name="file" />*@
+
+            <button type="submit" class="btn btn-primary" onclick="return checkIfTextEntered()">
+                <span class="glyphicon glyphicon-arrow-down"></span>
+                Fetch Resumes
+            </button>
+        </div>
+    }
+</div>
+
+<script>
+    function checkIfTextEntered() {
+        if (document.getElementById('resumePoolPath').value)
+            return true;
+        else
+            return false;
+    }
+</script>

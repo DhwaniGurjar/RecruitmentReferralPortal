@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RecruitmentLineManager.Zest.DbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="dbJobDescription">
+    <Key>
+      <PropertyRef Name="JobDescriptionId" />
+    </Key>
+    <Property Name="JobDescriptionId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="100" />
+    <Property Name="ResourceDesignation" Type="bit" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="EssentialSkills" Type="nvarchar" MaxLength="50" />
+    <Property Name="DesiredSkills" Type="nvarchar" MaxLength="50" />
+    <Property Name="JobType" Type="bit" />
+    <Property Name="Department" Type="bit" />
+    <Property Name="Priority" Type="bit" />
+    <Property Name="JobExperience" Type="int" />
+    <Property Name="OtherSkills" Type="nvarchar" MaxLength="50" />
+    <Property Name="Remarks" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="dbUser">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="100" />
+    <Property Name="Password" Type="nvarchar" MaxLength="100" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="PhoneNo" Type="int" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmailAddress" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityContainer Name="RecruitmentLineManagerZestDbModelStoreContainer">
+    <EntitySet Name="dbJobDescription" EntityType="Self.dbJobDescription" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="dbUser" EntityType="Self.dbUser" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

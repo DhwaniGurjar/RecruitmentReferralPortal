@@ -1,0 +1,74 @@
+﻿@model IEnumerable<RecruitmentPortal.Zest.Common.ServiceModels.JobPositionResult>
+
+
+@{
+    ViewBag.Title = "Job Position List";
+}
+<div class="page-header">
+    <div class="row">
+        <div class="col-sm-6" style="padding-bottom:10px">
+            <div class="col-sm-12">
+                 <h1> List Of Open Position</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>*@
+
+<div class="common-table-style" style="width:80%; margin-left:15px">
+    <div>
+        <table class="table common-table" cellspacing="0"  id="MainContent_gvEmp" style="width:100%;border-collapse:collapse;">
+
+            <tr >
+                <th  scope="col" style="width:5%;  text-align:center">
+                    <a href=""> @Html.DisplayNameFor(model => model.JD_ID) </a>
+                    
+                </th>
+                <th  scope="col" style="width:20%; text-align:center">
+                    <a href="">@Html.DisplayNameFor(model => model.Job_Title)</a>
+                </th>
+                <th   style="width:20%;text-align:center">
+                    <a href=""> @Html.DisplayNameFor(model => model.Job_Location)</a>
+                </th>
+                <th  style="width:15%; text-align:center">
+                    <a href=""> @Html.DisplayNameFor(model => model.Job_Experience)</a>
+                </th>
+                <th   style="width:15%; text-align:center">
+                    <a href=""> @Html.DisplayNameFor(model => model.Created_On)</a>
+                </th>
+                <th width="10%"></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr >
+                    <td align="center">
+                        @Html.DisplayFor(modelItem => item.JD_ID)
+                    </td>
+                    <td align="center">
+                        @Html.DisplayFor(modelItem => item.Job_Title)
+                    </td>
+                    <td align="center">
+                        @Html.DisplayFor(modelItem => item.Job_Location)
+                    </td>
+                    <td align="center">
+                        @Html.DisplayFor(modelItem => item.Job_Experience)
+                    </td>
+                    <td align="center">
+                        @Html.DisplayFor(modelItem => item.Created_On)
+                    </td>
+                    <td >
+                        <button type="submit" id="btnSubmit"class="btn btn-success ic-save" style="height:30px; width:80px;padding-top:0px;padding-left:0px;" >
+                            @Html.ActionLink("View JD", "SingleJobPositionList", "Jobs", new { jobId = item.JD_ID }, new { @class = "btn",style="color:white" })
+                        </button>
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+    </div>
+

@@ -1,0 +1,8 @@
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\bin\Debug\RecruitmentLineManager.Zest.Common.dll
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\bin\Debug\RecruitmentLineManager.Zest.Common.pdb
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\bin\Debug\Newtonsoft.Json.dll
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\bin\Debug\Newtonsoft.Json.xml
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\obj\Debug\RecruitmentLineManager.Zest.Common.csprojResolveAssemblyReference.cache
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\obj\Debug\RecruitmentLineManager.Zest.Common.dll
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\obj\Debug\RecruitmentLineManager.Zest.Common.pdb
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\obj\Debug\RecruitmentLineManager.Zest.Common.csproj.CoreCompileInputs.cache

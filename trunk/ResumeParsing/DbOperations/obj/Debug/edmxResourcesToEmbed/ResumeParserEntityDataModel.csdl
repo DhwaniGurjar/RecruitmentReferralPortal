@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ResumeParserModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Keywords">
+    <Key>
+      <PropertyRef Name="KeywordId" />
+    </Key>
+    <Property Name="KeywordId" Type="Guid" Nullable="false" />
+    <Property Name="KeywordName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="ResumeValues" Relationship="Self.FK_ResumeValues_Keywords" FromRole="Keywords" ToRole="ResumeValues" />
+  </EntityType>
+  <EntityType Name="Resumes">
+    <Key>
+      <PropertyRef Name="ResumeId" />
+    </Key>
+    <Property Name="ResumeId" Type="Guid" Nullable="false" />
+    <Property Name="ResumeContents" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FilePath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ResumeType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="ResumeValues" Relationship="Self.FK_ResumeValues_Resumes" FromRole="Resumes" ToRole="ResumeValues" />
+  </EntityType>
+  <EntityType Name="ResumeValues">
+    <Key>
+      <PropertyRef Name="ResumeId" />
+      <PropertyRef Name="KeywordId" />
+    </Key>
+    <Property Name="ResumeId" Type="Guid" Nullable="false" />
+    <Property Name="KeywordId" Type="Guid" Nullable="false" />
+    <Property Name="KeywordValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Keywords" Relationship="Self.FK_ResumeValues_Keywords" FromRole="ResumeValues" ToRole="Keywords" />
+    <NavigationProperty Name="Resumes" Relationship="Self.FK_ResumeValues_Resumes" FromRole="ResumeValues" ToRole="Resumes" />
+  </EntityType>
+  <Association Name="FK_ResumeValues_Keywords">
+    <End Role="Keywords" Type="Self.Keywords" Multiplicity="1" />
+    <End Role="ResumeValues" Type="Self.ResumeValues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Keywords">
+        <PropertyRef Name="KeywordId" />
+      </Principal>
+      <Dependent Role="ResumeValues">
+        <PropertyRef Name="KeywordId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResumeValues_Resumes">
+    <End Role="Resumes" Type="Self.Resumes" Multiplicity="1" />
+    <End Role="ResumeValues" Type="Self.ResumeValues" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Resumes">
+        <PropertyRef Name="ResumeId" />
+      </Principal>
+      <Dependent Role="ResumeValues">
+        <PropertyRef Name="ResumeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ResumeParserEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Keywords" EntityType="Self.Keywords" />
+    <EntitySet Name="Resumes" EntityType="Self.Resumes" />
+    <EntitySet Name="ResumeValues" EntityType="Self.ResumeValues" />
+    <AssociationSet Name="FK_ResumeValues_Keywords" Association="Self.FK_ResumeValues_Keywords">
+      <End Role="Keywords" EntitySet="Keywords" />
+      <End Role="ResumeValues" EntitySet="ResumeValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResumeValues_Resumes" Association="Self.FK_ResumeValues_Resumes">
+      <End Role="Resumes" EntitySet="Resumes" />
+      <End Role="ResumeValues" EntitySet="ResumeValues" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

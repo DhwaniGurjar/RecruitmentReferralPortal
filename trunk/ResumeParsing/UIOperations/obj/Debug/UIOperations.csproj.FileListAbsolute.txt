@@ -1,0 +1,110 @@
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\ApplicationInsights.config
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\UIOperations.dll.config
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\UIOperations.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\UIOperations.pdb
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Antlr3.Runtime.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\DbOperations.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Entities.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\EntityFramework.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\EntityFramework.SqlServer.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Microsoft.AI.Web.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Microsoft.ApplicationInsights.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Newtonsoft.Json.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\ResumeParser.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\System.Web.Helpers.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\System.Web.Mvc.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\System.Web.Optimization.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\System.Web.Razor.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\System.Web.WebPages.Deployment.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\System.Web.WebPages.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\System.Web.WebPages.Razor.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\WebGrease.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\itextsharp.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\DbOperations.pdb
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\DbOperations.dll.config
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Entities.pdb
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\ResumeParser.pdb
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\ResumeParser.dll.config
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\EntityFramework.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\EntityFramework.SqlServer.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\System.Web.Helpers.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\System.Web.Mvc.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\System.Web.Optimization.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\System.Web.Razor.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\System.Web.WebPages.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\System.Web.WebPages.Deployment.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\System.Web.WebPages.Razor.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Antlr3.Runtime.pdb
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Newtonsoft.Json.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Microsoft.ApplicationInsights.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\Microsoft.AI.Web.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\bin\itextsharp.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\obj\Debug\UIOperations.csprojResolveAssemblyReference.cache
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\obj\Debug\UIOperations.csproj.CoreCompileInputs.cache
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\obj\Debug\UIOperations.csproj.CopyComplete
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\obj\Debug\UIOperations.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\UIOperations\obj\Debug\UIOperations.pdb
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\ApplicationInsights.config
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\UIOperations.dll.config
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\UIOperations.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\UIOperations.pdb
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Antlr3.Runtime.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\DbOperations.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Entities.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\EntityFramework.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\EntityFramework.SqlServer.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Microsoft.AI.Agent.Intercept.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Microsoft.AI.DependencyCollector.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Microsoft.AI.Web.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Microsoft.AI.WindowsServer.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Microsoft.ApplicationInsights.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Microsoft.Web.Infrastructure.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Newtonsoft.Json.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\ResumeParser.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\System.Web.Helpers.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\System.Web.Mvc.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\System.Web.Optimization.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\System.Web.Razor.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\System.Web.WebPages.Deployment.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\System.Web.WebPages.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\System.Web.WebPages.Razor.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\WebGrease.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\itextsharp.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\DbOperations.pdb
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Entities.pdb
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\ResumeParser.pdb
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\EntityFramework.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\EntityFramework.SqlServer.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\System.Web.Helpers.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\System.Web.Mvc.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\System.Web.Optimization.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\System.Web.Razor.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\System.Web.WebPages.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\System.Web.WebPages.Deployment.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\System.Web.WebPages.Razor.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Antlr3.Runtime.pdb
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Newtonsoft.Json.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Microsoft.ApplicationInsights.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Microsoft.AI.DependencyCollector.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Microsoft.AI.WindowsServer.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\Microsoft.AI.Web.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\bin\itextsharp.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\obj\Debug\UIOperations.csprojResolveAssemblyReference.cache
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\obj\Debug\UIOperations.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\UIOperations\obj\Debug\UIOperations.pdb

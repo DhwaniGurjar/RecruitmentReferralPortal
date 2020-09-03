@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RecruitmentLineManager.Zest.DbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="dbJobDescription">
+    <Key>
+      <PropertyRef Name="JobDescriptionId" />
+    </Key>
+    <Property Name="JobDescriptionId" Type="Guid" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ResourceDesignation" Type="Boolean" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EssentialSkills" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DesiredSkills" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="JobType" Type="Boolean" />
+    <Property Name="Department" Type="Boolean" />
+    <Property Name="Priority" Type="Boolean" />
+    <Property Name="JobExperience" Type="Int32" />
+    <Property Name="OtherSkills" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Remarks" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="dbUser">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="Username" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNo" Type="Int32" />
+    <Property Name="ZipCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmailAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="RecruitmentLineManagerEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="dbJobDescriptions" EntityType="Self.dbJobDescription" />
+    <EntitySet Name="dbUsers" EntityType="Self.dbUser" />
+  </EntityContainer>
+</Schema>

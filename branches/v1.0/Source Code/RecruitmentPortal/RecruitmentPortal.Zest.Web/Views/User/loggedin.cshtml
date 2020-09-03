@@ -1,0 +1,9 @@
+﻿
+
+@{
+    ViewBag.Title = "logged in";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Hello @ViewBag.username</h2>
+@{Html.RenderPartial("PieChart", "Chart");}

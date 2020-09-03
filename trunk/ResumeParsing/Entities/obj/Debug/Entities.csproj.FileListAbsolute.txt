@@ -1,0 +1,10 @@
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\Entities\bin\Debug\Entities.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\Entities\bin\Debug\Entities.pdb
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\Entities\obj\Debug\Entities.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\Entities\obj\Debug\Entities.pdb
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\Entities\bin\Debug\Entities.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\Entities\bin\Debug\Entities.pdb
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\Entities\obj\Debug\Entities.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\Entities\obj\Debug\Entities.pdb

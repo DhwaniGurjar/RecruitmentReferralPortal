@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ResumeParserModelStoreContainer" CdmEntityContainer="ResumeParserEntities">
+    <EntitySetMapping Name="Keywords">
+      <EntityTypeMapping TypeName="ResumeParserModel.Keywords">
+        <MappingFragment StoreEntitySet="Keywords">
+          <ScalarProperty Name="KeywordId" ColumnName="KeywordId" />
+          <ScalarProperty Name="KeywordName" ColumnName="KeywordName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Resumes">
+      <EntityTypeMapping TypeName="ResumeParserModel.Resumes">
+        <MappingFragment StoreEntitySet="Resumes">
+          <ScalarProperty Name="ResumeId" ColumnName="ResumeId" />
+          <ScalarProperty Name="ResumeContents" ColumnName="ResumeContents" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="ResumeType" ColumnName="ResumeType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResumeValues">
+      <EntityTypeMapping TypeName="ResumeParserModel.ResumeValues">
+        <MappingFragment StoreEntitySet="ResumeValues">
+          <ScalarProperty Name="ResumeId" ColumnName="ResumeId" />
+          <ScalarProperty Name="KeywordId" ColumnName="KeywordId" />
+          <ScalarProperty Name="KeywordValue" ColumnName="KeywordValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

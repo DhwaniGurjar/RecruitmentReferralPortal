@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Resume Parser";
+}
+
+<div style="padding:30px">
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1 class="text-center" style="color:black">Resume Parser Home Page</h1>
+    <br />
+    <div class="advanced-content text-center">
+        <p class="content-pane">
+            Resume Parser is mainly divided into two parts.<br />
+            The Configure Resume Pool Module parses the resumes uploaded and extract the information from the resume.<br />
+            This extracted information is the stored into the database.<br />
+            The Search Module lets you search the database for matching the candidates based on the Job Descriptions uploaded.<br />
+        </p>
+    </div>
+    <br />
+    <div class="containe text-center">
+        <button class="btn btn-primary" onclick="@("window.location.href='" + @Url.Action("Index", "Home") + "'");">
+            <span class="glyphicon glyphicon-user"></span>
+            Configure Resume Pool
+        </button>
+        <button class="btn btn-primary" style="margin-left:20px" onclick="@("window.location.href='" + @Url.Action("Index", "Search") + "'");">
+            <span class="glyphicon glyphicon-search"></span>
+            Search Profiles
+        </button>
+    </div>
+</div>
+
+    @*<script type="text/javascript">
+        function redirectToInsert() {
+            document.location("Home/Index");
+        }
+
+        function redirectToSearch() {
+            window.location("Search/Index");
+        }
+
+    </script>*@

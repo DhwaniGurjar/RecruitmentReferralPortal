@@ -1,0 +1,217 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Pie Charts</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.bundle.min.js"></script>
+    <script>
+
+        var PieChartData =
+            {
+                labels: [@Html.Raw(ViewBag.Jobname_List)],
+                datasets: [{
+                    label: 'JobWise Candidate Count',
+                    backgroundColor: [
+                        "#f990a7",
+                        "#aad2ed",
+                        "#9966FF",
+                        "#99e5e5",
+                        "#f7bd83",
+                    ],
+                    borderWidth: 2,
+                    data: [@ViewBag.CandidateCount_List]
+                }]
+            };
+
+        var barChartData =
+            {
+                labels: [@Html.Raw(ViewBag.Designation_List)],
+                datasets: [{
+                    label: 'JobWise Candidate Count',
+                    backgroundColor: [
+                        "#f990a7",
+                        "#aad2ed",
+                        "#9966FF",
+                        "#99e5e5",
+                        "#f7bd83",
+                    ],
+                    borderWidth: 2,
+                    data: [@ViewBag.OfferedCount_List]
+                }]
+            };
+
+            window.onload = function () {
+                var ctx1 = document.getElementById("Piecanvas").getContext("2d");
+                window.myBar = new Chart(ctx1,
+                    {
+                        type: 'pie',
+                        data: PieChartData,
+                        options:
+                            {
+                                title:
+                                {
+                                    display: true,
+                                    text: ""
+                                },
+                                responsive: true,
+                                maintainAspectRatio: true
+                            }
+                    });
+
+                var ctx2 = document.getElementById("barcanvas").getContext("2d");
+                window.myBar1 = new Chart(ctx2,
+                    {
+                        type: 'bar',
+                        data: barChartData,
+                        options:
+                            {
+                                title:
+                                {
+                                    display: true,
+                                    text: ""
+                                },
+                                responsive: true,
+                                maintainAspectRatio: true
+                            }
+                    });
+            }
+
+    </script>
+
+
+</head>
+<body>
+
+    <div class="row">
+
+        <div class="col-md-5 col-sm-6">
+            <div class="header-profile-img text-center">
+                <img src="~/CSS/images/User.PNG" alt="">
+            </div>
+            <div class="header-profile-detail col-md-8 col-sm-7 col-xs-12">
+                <div class="profile-name">
+                  @ViewBag.username
+                </div>
+                <div class="profile-desig">
+                    @ViewBag.rolename
+                </div>
+                <div class="profile-desig">
+                    @ViewBag.username cygnet-infotech.com
+                </div>
+            </div>
+            <div class="clearfix">
+            </div>
+        </div>
+        <div class="clearfix">
+
+        </div>
+
+    </div>
+    @*<div class="col-md-3 col-sm-6 ">*@
+    @*<div class="panel panel-default dash-chart-panel dash-row-2" style="height:331px ; width:500px">*@
+    <div class="col-sm-5" style="width:25%">
+        <div class="count-box-defult count-box-success">
+            <div class="detail pull-left detail-block">
+                <div class="desc">Open Job Positions</div>
+                <div class="number">
+                    <div class="block checkSessionTimeout joined-month cursor-pointer">
+                        <span data-value="9" class="counterup"> @ViewBag.JobPositionCount</span>@*<small>Count</small>*@
+                    </div>
+                    @*<div class="devider"></div>*@
+                    @*<div class="block"><span data-value="" class="counterup">0</span><small>Offered</small></div>*@
+
+                </div>
+            </div>
+            <div class="visual pull-right">
+                <i class="fa fa-check"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-5" style="width:25%">
+        <div class="count-box-defult count-box-aqua">
+            <div class="detail pull-left detail-block">
+                <div class="desc">Job Wise Candidate</div>
+                <div class="number">
+                    <div class="block checkSessionTimeout joined-month cursor-pointer">
+                        <span data-value="9" class="counterup"> @ViewBag.Count</span>@*<small>Count</small>*@
+                    </div>
+                    @*<div class="devider"></div>*@
+                    @*<div class="block"><span data-value="" class="counterup">0</span><small>Offered</small></div>*@
+
+                </div>
+            </div>
+            <div class="visual pull-right">
+                <i class="fa fa-user-plus"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-5" style="width:25%">
+        <div class="count-box-defult count-box-lightgreen">
+            <div class="detail pull-left detail-block">
+                <div class="desc">Designation Wise Offered</div>
+                <div class="number">
+                    <div class="block checkSessionTimeout confirmation-thismonth cursor-pointer">
+                        <span data-value="6" class="counterup">
+                            @ViewBag.CountOffer
+                        </span>@*<small>Count</small>*@
+                    </div>
+                    @*<div class="devider"></div>*@
+                    @*<div class="block checkSessionTimeout confirmation-nextmonth cursor-pointer" title="click to view confirmation due employees" data-linkid="8"><span data-value="7" class="counterup">7</span><small>Next Month</small></div>*@
+
+                </div>
+            </div>
+            <div class="visual pull-right">
+                <i class="fa fa-check"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-5" style="width:25%">
+        <div class="count-box-defult count-box-purple">
+            <div class="detail pull-left detail-block">
+                <div class="desc">Referral</div>
+                <div class="number">
+                    <div class="block checkSessionTimeout joined-month cursor-pointer">
+                        <span data-value="9" class="counterup">@ViewBag.ReferralCount</span>@*<small>Count</small>*@
+                    </div>
+                    @*<div class="devider"></div>*@
+                    @*<div class="block"><span data-value="" class="counterup">0</span><small>Offered</small></div>*@
+
+                </div>
+            </div>
+            <div class="visual pull-right">
+                <i class="fa fa-user-plus"></i>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-10" style="width:100%">
+        <div class="panel panel-default dash-chart-panel filter-area dash-row-3" style="width:50%; height: 55%; float:left;">
+            <div class="panel-title " style="margin-left:10px; margin-top:20px">
+                <i class="fa fa-pie-chart"></i><span class="employeeSatus cursor-pointer" title="click to view number of candidates" style="margin-left:10px" data-statuscode="0">Job Wise Candidate Count</span>
+                <h4 class="pull-right no-margin"><span class="hidden-xs hidden-sm label label-info"></span> </h4>
+                <div class="clearfix">
+
+                </div>
+            </div> <canvas id="Piecanvas"></canvas>
+        </div>
+        <div class="panel panel-default dash-chart-panel filter-area dash-row-3" style="width:49%; height: 55%; float:right;">
+            <div class="panel-title " style="margin-left:10px; margin-top:20px">
+                <i class="fa fa-area-chart title-icon"></i><span class="employeeSatus cursor-pointer" title="click to view number of candidates" data-statuscode="0">Designation Wise Job-Offered Candidate Count</span>
+                <h4 class="pull-right no-margin"><span class="hidden-xs hidden-sm label label-info"></span> </h4>
+                <div class="clearfix">
+
+                </div>
+            </div>
+            <canvas id="barcanvas"></canvas>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+﻿@model IEnumerable<UIOperations.Models.ListResumesModel>
+
+@{
+    ViewBag.Title = "Resumes List";
+}
+<div style="padding:30px">
+    <div class="page-header">
+        <div class="row">
+            <div class="col-md-12" style="padding-bottom:10px">
+                <div class="col-md-12">
+                    <h2 class="text-center">
+                        <span class="glyphicon glyphicon-th-list"></span>
+                        Resumes List
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    @*<p>
+            @Html.ActionLink("Create New", "Create")
+        </p>*@
+
+    <button type="button" class="btn btn-block btn-success" onclick="refresh()">
+        <span class="glyphicon glyphicon-refresh"></span>
+        Refresh
+    </button>
+    <table class="table table-striped table-hover table-condensed table-responsive">
+        <tr>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.FileName)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.CheckProcessed)
+            </th>
+            <th class="text-center">
+                Parse
+            </th>
+        </tr>
+        @if (Model.Count() == 0)
+        {
+            <tr>
+                <td colspan="3" align="center">No Resumes found in the specified folder path</td>
+            </tr>
+        }
+        else
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-center">
+                        @*@Html.DisplayFor(modelItem => item.FileName)*@
+                        @{
+                            var path = Path.GetFileName(item.FileName);
+                            path = path.Split(';').First();
+                        }
+                        @path
+                    </td>
+                    <td class="text-center">
+                        @Html.DisplayFor(modelItem => item.CheckProcessed)
+                    </td>
+                    <td class="text-center glyphicon-link">
+                        @Html.ActionLink("Click to Parse", "CandidateForm", new { path = item.FileName })
+                        <span class="glyphicon glyphicon-edit"></span>
+                    </td>
+                </tr>
+            }
+        }
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+</div>
+<script type="text/javascript">
+    function refresh() {
+        document.location('ListResumes');
+    }
+</script>

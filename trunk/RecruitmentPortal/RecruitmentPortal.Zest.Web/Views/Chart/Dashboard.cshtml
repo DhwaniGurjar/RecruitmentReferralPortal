@@ -1,0 +1,111 @@
+﻿
+@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Pie Charts</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.bundle.min.js"></script>
+    <script>
+        
+        var PieChartData =
+            {
+                labels: [@Html.Raw(ViewBag.Jobname_List)],
+                datasets: [{
+                    label: 'JobWise Candidate Count',
+                    backgroundColor: [
+                        "#f990a7",
+                        "#aad2ed",
+                        "#9966FF",
+                        "#99e5e5",
+                        "#f7bd83",
+                    ],
+                    borderWidth: 2,
+                    data: [@ViewBag.CandidateCount_List]
+                }]
+            };
+
+        var barChartData =
+            {
+                labels: [@Html.Raw(ViewBag.Designation_List)],
+                datasets: [{
+                    label: 'JobWise Candidate Count',
+                    backgroundColor: [
+                        "#f990a7",
+                        "#aad2ed",
+                        "#9966FF",
+                        "#99e5e5",
+                        "#f7bd83",
+                    ],
+                    borderWidth: 2,
+                    data: [@ViewBag.OfferedCount_List]
+                }]
+            };
+
+            window.onload = function () {
+                var ctx1 = document.getElementById("Piecanvas").getContext("2d");
+                window.myBar = new Chart(ctx1,
+                    {
+                        type: 'pie',
+                        data: PieChartData,
+                        options:
+                            {
+                                title:
+                                {
+                                    display: true,
+                                    text: "JobWise Candidate Count"
+                                },
+                                responsive: true,
+                                maintainAspectRatio: true
+                            }
+                    });
+
+                var ctx2 = document.getElementById("barcanvas").getContext("2d");
+                window.myBar1 = new Chart(ctx2,
+                    {
+                        type: 'bar',
+                        data: barChartData,
+                        options:
+                            {
+                                title:
+                                {
+                                    display: true,
+                                    text: "DesignationWise Candidate Count"
+                                },
+                                responsive: true,
+                                maintainAspectRatio: true
+                            }
+                    });
+            }
+        
+    </script>
+    
+    
+</head>
+<body>
+    <div class="col-md-3 col-sm-6 ">
+        @*<div class="panel panel-default dash-chart-panel dash-row-2" style="height:331px ; width:500px">*@
+            <div class="panel-body" id="departmentChartPanel" style="text-align: center; width:550px" height="440px">
+                <canvas id="Piecanvas"></canvas>
+            </div>
+            </div>
+        
+        <div class="col-md-3 col-sm-6 ">
+            @*<div class="panel panel-default dash-chart-panel dash-row-2" style="height:331px">*@
+                <div class="panel-body" id="locationChartPanel" style="text-align: center; width:550px; height:440px; padding-left:100px">
+                    <canvas id="barcanvas"></canvas>
+                </div>
+            </div>
+        @*</div>*@
+        @*<div style="text-align: center">
+                Disclaimer:- This data is for demo it is
+                not real data it wont relate to any company
+            </div>*@
+</body>
+
+</html>

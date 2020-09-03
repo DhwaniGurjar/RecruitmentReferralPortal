@@ -1,0 +1,17 @@
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.DAL\bin\Debug\RecruitmentLineManager.Zest.DAL.dll.config
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.DAL\bin\Debug\RecruitmentLineManager.Zest.DAL.dll
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.DAL\bin\Debug\RecruitmentLineManager.Zest.DAL.pdb
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.DAL\bin\Debug\EntityFramework.dll
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.DAL\bin\Debug\EntityFramework.xml
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.DAL\obj\Debug\RecruitmentLineManager.Zest.DAL.dll
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.DAL\obj\Debug\RecruitmentLineManager.Zest.DAL.pdb
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.DAL\obj\Debug\RecruitmentLineManager.Zest.DAL.csprojResolveAssemblyReference.cache
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.DAL\obj\Debug\RecruitmentLineManager.Zest.DAL.csproj.CoreCompileInputs.cache
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.DAL\bin\Debug\Dapper.dll
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.DAL\bin\Debug\RecruitmentLineManager.Zest.Common.dll
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.DAL\bin\Debug\Newtonsoft.Json.dll
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.DAL\bin\Debug\Dapper.xml
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.DAL\bin\Debug\RecruitmentLineManager.Zest.Common.pdb
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.DAL\bin\Debug\Newtonsoft.Json.xml

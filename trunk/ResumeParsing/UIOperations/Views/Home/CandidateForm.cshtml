@@ -1,0 +1,225 @@
+﻿@model UIOperations.Models.CandidateFormModel
+
+@{
+    ViewBag.Title = "Candidate Form";
+}
+<div style="padding:30px">
+
+    <div class="page-header clearfix">
+        <div class="row">
+            <div class="col-sm-6" style="padding-bottom:10px">
+                <div class="col-sm-12">
+                    <h1>Candidate Form</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @using (Html.BeginForm("CandidateForm", "Home", FormMethod.Post, new { id = "myForm" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control text-capitalize", title = "Enter Candidate's Full Name here" } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                @Html.LabelFor(model => model.EmailAddress, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.EmailAddress, new { htmlAttributes = new { @class = "form-control", title = "Enter Candidate's Email Address here" } })
+                    @Html.ValidationMessageFor(model => model.EmailAddress, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.MobileNumber, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.MobileNumber, new { htmlAttributes = new { @class = "form-control", title = "Enter Candidate's Mobile Number here" } })
+                    @Html.ValidationMessageFor(model => model.MobileNumber, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Age, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Age, new { htmlAttributes = new { @class = "form-control", title = "Enter Candidate's Age here" } })
+                    @Html.ValidationMessageFor(model => model.Age, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Languages, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Languages, new { htmlAttributes = new { @class = "form-control text-capitalize", title = "Enter all the languages known by the Candidate here" } })
+                    @Html.ValidationMessageFor(model => model.Languages, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Address, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextAreaFor(model => model.Address, new { @class = "form-control text-capitalize", @rows = "5", @cols = "5", title = "Enter the Candidate's Address here", style = "width:500px" })
+                    @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.City, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.City, new { htmlAttributes = new { @class = "form-control text-capitalize", title = "Enter the Candidate's Home City here" } })
+                    @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.State, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.State, new { htmlAttributes = new { @class = "form-control text-capitalize", title = "Enter the Candidate's Home State here" } })
+                    @Html.ValidationMessageFor(model => model.State, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Country, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Country, new { htmlAttributes = new { @class = "form-control text-capitalize", title = "Enter the Candidate's Home Country here" } })
+                    @Html.ValidationMessageFor(model => model.Country, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.EducationDegrees, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.EducationDegrees, new { htmlAttributes = new { @class = "form-control text-capitalize", title = "Enter all the Education Degrees the Candidate has" } })
+                    @Html.ValidationMessageFor(model => model.EducationDegrees, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Technologies, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Technologies, new { htmlAttributes = new { @class = "form-control text-capitalize", title = "Enter the Technologies the candidate is skilled in" } })
+                    @Html.ValidationMessageFor(model => model.Technologies, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Urls, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Urls, new { htmlAttributes = new { @class = "form-control text-capitalize", title = "Enter the URLs the Candidate has mentioned in his Resume" } })
+                    @Html.ValidationMessageFor(model => model.Urls, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Domains, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Domains, new { htmlAttributes = new { @class = "form-control text-capitalize", title = "Enter all the Domains the Candidate has worked in the past" } })
+                    @Html.ValidationMessageFor(model => model.Domains, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Skills, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Skills, new { htmlAttributes = new { @class = "form-control text-capitalize", title = "Enter all the skills the Candidate is skilled in" } })
+                    @Html.ValidationMessageFor(model => model.Skills, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.WorkExperience, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.TextAreaFor(model => model.WorkExperience, new { @class = "form-control text-capitalize", @rows = "5", @cols = "5", title = "Enter the information about the Candidate's past employment here here" })
+                    @Html.ValidationMessageFor(model => model.WorkExperience, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.YearsOfExperience, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.YearsOfExperience, new { htmlAttributes = new { @class = "form-control", title = "Enter the number of years the Candidate has Experience for" } })
+                    @Html.ValidationMessageFor(model => model.YearsOfExperience, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Tags, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Tags, new { htmlAttributes = new { @class = "form-control text-capitalize", title = "The tags can be used to store any additional information about the candidate that has not been covered in the other keywords." } })
+                    @Html.ValidationMessageFor(model => model.Tags, "", new { @class = "text-danger" })
+                    <small>The tags can be used to store any additional information<br />about the candidate that has not been covered in the other keywords.</small>
+                </div>
+            </div>
+            <br />
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#basicModal">
+                        <span class="glyphicon glyphicon-save"></span>
+                        Save Candidate
+                    </button>
+                    @*<button class="btn btn-primary" formtarget = "_blank" style="margin-left:20px" onclick="@("window.open.href='" + @Url.Action("OpenFile", "Home") + "'");">
+                        <span class="glyphicon glyphicon-user"></span>
+                        Open Resume
+                    </button>
+                    <input type="button" class="btn btn-primary" value="Open Resume" onclick="location.href='@Url.Action("OpenFile", "Home", new { }, new { target ="_blank" })'" />*@
+                    @*Open Resume*@
+                    <p class="btn btn-primary" style="margin-left:20px">
+                        <span class="glyphicon glyphicon-user"></span>
+                        @Html.ActionLink("Open Resume", "OpenFile", new { }, new { style = "color:white", target = "_blank" })
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+
+    @*<div id="divLoading" style="margin: 0px; padding: 0px; position: fixed; right: 0px;
+            top: 0px; width: 100%; height: 100%; background-color: #666666; z-index: 30001;
+            opacity: .8; filter: alpha(opacity=70);display:none">
+            <p style="position: absolute; top: 30%; left: 45%; color: White;">
+                Loading, please wait...<img src="../../Content/themes/base/images/ajax-loading.gif">
+            </p>
+        </div>*@
+
+    <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    @*<span class="glyphicon glyphicon-modal-window"></span>*@
+                    <h4 class="modal-title" id="myModalLabel">Please Confirm</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Are you sure you want to save this candidate's form?</h3>
+                    <p class="text-warning">You will still be able to change the candidate's details later</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="submitForm()">Yes</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function submitForm() {
+            document.getElementById("myForm").submit();
+        }
+    </script>
+
+    <div>
+        @Html.ActionLink("Back to List", "ListResumes", new { Style = "text-size:50px" })
+    </div>
+</div>
+<br /><br /><br /><br />

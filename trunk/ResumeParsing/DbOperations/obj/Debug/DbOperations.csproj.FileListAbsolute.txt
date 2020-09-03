@@ -1,0 +1,51 @@
+C:\Users\doshiparth\Desktop\Cygnet\Project\ResumeParser\DbOperations\bin\Debug\DbOperations.dll.config
+C:\Users\doshiparth\Desktop\Cygnet\Project\ResumeParser\DbOperations\bin\Debug\DbOperations.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\ResumeParser\DbOperations\bin\Debug\DbOperations.pdb
+C:\Users\doshiparth\Desktop\Cygnet\Project\ResumeParser\DbOperations\bin\Debug\EntityFramework.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\ResumeParser\DbOperations\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\ResumeParser\DbOperations\bin\Debug\ResumeParser.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\ResumeParser\DbOperations\bin\Debug\itextsharp.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\ResumeParser\DbOperations\bin\Debug\ResumeParser.pdb
+C:\Users\doshiparth\Desktop\Cygnet\Project\ResumeParser\DbOperations\bin\Debug\ResumeParser.dll.config
+C:\Users\doshiparth\Desktop\Cygnet\Project\ResumeParser\DbOperations\bin\Debug\EntityFramework.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\ResumeParser\DbOperations\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\ResumeParser\DbOperations\bin\Debug\itextsharp.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\ResumeParser\DbOperations\obj\Debug\DbOperations.csprojResolveAssemblyReference.cache
+C:\Users\doshiparth\Desktop\Cygnet\Project\ResumeParser\DbOperations\obj\Debug\DbOperations.csproj.CoreCompileInputs.cache
+C:\Users\doshiparth\Desktop\Cygnet\Project\ResumeParser\DbOperations\obj\Debug\DbOperations.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\ResumeParser\DbOperations\obj\Debug\DbOperations.pdb
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\DbOperations\bin\Debug\DbOperations.dll.config
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\DbOperations\bin\Debug\DbOperations.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\DbOperations\bin\Debug\DbOperations.pdb
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\DbOperations\bin\Debug\Entities.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\DbOperations\bin\Debug\EntityFramework.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\DbOperations\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\DbOperations\bin\Debug\ResumeParser.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\DbOperations\bin\Debug\itextsharp.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\DbOperations\bin\Debug\Entities.pdb
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\DbOperations\bin\Debug\ResumeParser.pdb
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\DbOperations\bin\Debug\ResumeParser.dll.config
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\DbOperations\bin\Debug\EntityFramework.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\DbOperations\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\DbOperations\bin\Debug\itextsharp.xml
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\DbOperations\obj\Debug\DbOperations.csprojResolveAssemblyReference.cache
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\DbOperations\obj\Debug\DbOperations.csproj.CoreCompileInputs.cache
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\DbOperations\obj\Debug\DbOperations.csproj.CopyComplete
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\DbOperations\obj\Debug\DbOperations.dll
+C:\Users\doshiparth\Desktop\Cygnet\Project\Code\RecruitmentPortalAIResumeParsing\trunk\DbOperations\obj\Debug\DbOperations.pdb
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\DbOperations\bin\Debug\DbOperations.dll.config
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\DbOperations\bin\Debug\DbOperations.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\DbOperations\bin\Debug\DbOperations.pdb
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\DbOperations\bin\Debug\Entities.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\DbOperations\bin\Debug\EntityFramework.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\DbOperations\bin\Debug\EntityFramework.SqlServer.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\DbOperations\bin\Debug\ResumeParser.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\DbOperations\bin\Debug\itextsharp.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\DbOperations\bin\Debug\Entities.pdb
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\DbOperations\bin\Debug\ResumeParser.pdb
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\DbOperations\bin\Debug\EntityFramework.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\DbOperations\bin\Debug\EntityFramework.SqlServer.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\DbOperations\bin\Debug\itextsharp.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\DbOperations\obj\Debug\DbOperations.csprojResolveAssemblyReference.cache
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\DbOperations\obj\Debug\DbOperations.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\ResumeParsing\DbOperations\obj\Debug\DbOperations.pdb

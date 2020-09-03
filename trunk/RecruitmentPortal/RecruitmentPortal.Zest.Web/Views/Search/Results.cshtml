@@ -1,0 +1,102 @@
+﻿@model IEnumerable<UIOperations.Models.ResultsPageModel>
+
+@{
+    ViewBag.Title = "Results";
+}
+<div style="padding:30px">
+    <h1 class="text-center">Best Matched Results</h1>
+
+    <table class="table table-striped table-hover table-condensed">
+        <tr>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.MobileNumber)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.EmailAddress)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.Experience)
+            </th>
+            <th class="text-center">
+                @Html.DisplayNameFor(model => model.FileTypeOpen)
+            </th>
+        </tr>
+
+        @if (Model.Count() == 0)
+        {
+            <tr>
+                <td colspan="5" align="center">No Matching Candidates Found</td>
+            </tr>
+        }
+        else
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td class="text-center">
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td class="text-center">
+                        @Html.DisplayFor(modelItem => item.MobileNumber)
+                    </td>
+                    <td class="text-center">
+                        @{ 
+                            string emailAddress = item.EmailAddress;
+                        }
+                        <asp:hyperlink id="hlnkSendMail" runat="server" navigateurl="mailto:@emailAddress?subject=Job Interview&body=You are selected for the position" target="_blank" text="@emailAddress" xmlns:asp="#unknown">
+                        </asp:hyperlink>
+
+                        @*<a href="mailto:doshiparth007@gmail.com?Subject=JobInterview" title="Job Interview">
+                            @Html.DisplayFor(modelItem => item.EmailAddress)
+                        </a>*@
+                    </td>
+                    <td class="text-center">
+                        @Html.DisplayFor(modelItem => item.Experience)
+                    </td>
+                    <td class="text-center">
+                        @if (item.FileTypeOpen.ToLower().Equals("pdf"))
+                        {
+                            //string path = item.FilePath;
+
+                            <button type="button" class="btn" value="OpenPdfFile" name="OpenPdf" onclick="location.href='@Url.Action("OpenFile", "Search", new { email = item.EmailAddress})'">
+                                <img src="@Url.Content("~/Images/pdf.png")" alt="PDF" style="width:30px; height:30px" />
+                            </button>
+
+                            @*<a href="@Html.ActionLink("Open File", "OpenFile", new { email = item.EmailAddress }, new { style = "color:white", target = "_blank" })">
+                                <img src="@Url.Content("~/Images/pdf.png")" alt="PDF" style="width:30px; height:30px" />
+                            </a>*@
+                        }
+                        else if (item.FileTypeOpen.ToLower().Equals("docx") | item.FileTypeOpen.ToLower().Equals("doc"))
+                        {
+                            <a href="@Html.ActionLink("Open File", "OpenFile", new { email = item.EmailAddress }, new { style = "color:white", target = "_blank" })">
+                                <img src="~/Images/word.png" alt="DOCX" style="width:30px; height:30px" />
+                            </a>
+                        }
+                        else
+                        {
+                            @Html.DisplayFor(modelItem => item.FileTypeOpen)
+                        }
+                    </td>
+                </tr>
+            }
+        }
+    </table>
+    <br />
+    <div class="text-center">
+        <button type="button" class="btn btn-primary btn-block" onclick="@("window.location.href='" + @Url.Action("SearchForm", "Search") + "'");">
+            <span class="glyphicon glyphicon-search"></span>
+            Start a new search
+        </button>
+    </div>
+    @*<button type="button" class="btn-primary" onclick="searchAgain()">Start a new search</button>*@
+
+    <br /><br /><br /><br /><br />
+</div>
+@*<script>
+    function searchAgain() {
+        window.location.href = "SearchForm";
+    }
+</script>*@

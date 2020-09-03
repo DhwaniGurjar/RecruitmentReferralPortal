@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "AdvancedSearch";
+}
+
+
+<div style="padding:30px">
+    
+    <br />
+    <br />
+    <br />
+
+    <h1 class="text-center" style="color:black">Advanced Search Page</h1>
+    <br />
+
+    @using (Html.BeginForm("AdvancedSearch", "Search", FormMethod.Post))
+    {
+
+        <div class="container text-center ">
+            <div class="form-groupx">
+
+                <label for="advancedSearchText">Enter the Keyword You Want To Search-for From The Database</label>
+                @*<span class="glyphicon glyphicon-folder-open"></span>*@
+                <i class="fa fa-database" style="font-size:18px"></i>
+                <br />
+                <br />
+                <div>
+                    <input name="advancedSearchText" style="margin-right:auto;margin-left:auto" type="text" class="form-control input-lg text-center" id="advancedSearchText" aria-describedby="helpText" placeholder="Enter Keyword">
+                    <br />
+                    <p id="helpText" class="form-text text-info">
+                        The keywords you enter will be searched for in the entire resume.
+                    </p>
+                </div>
+            </div>
+
+            @*<div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" name="selectedFolder" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp" multiple directory webkitdirectory>
+                    <small id="fileHelp" class="form-text text-muted">Select your folder from here.</small>
+                </div>*@
+
+            @*<input type="file" name="file" />*@
+
+            <button type="submit" class="btn btn-primary" onclick="return checkIfTextEntered()">
+                <span class="glyphicon glyphicon-search"></span>
+                Search
+            </button>
+        </div>
+    }
+</div>
+
+
+<script>
+    function checkIfTextEntered() {
+        if (document.getElementById('advancedSearchText').value)
+            return true;
+        else
+            return false;
+    }
+</script>

@@ -1,0 +1,45 @@
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\bin\Debug\RecruitmentLineManager.Zest.Common.dll
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\bin\Debug\RecruitmentLineManager.Zest.Common.pdb
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\bin\Debug\Newtonsoft.Json.dll
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\bin\Debug\Newtonsoft.Json.xml
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\obj\Debug\RecruitmentPortal.Zest.Common.csproj.CoreCompileInputs.cache
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\obj\Debug\RecruitmentLineManager.Zest.Common.dll
+E:\Zest Project\Source Code\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\obj\Debug\RecruitmentLineManager.Zest.Common.pdb
+G:\Zest Project\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\bin\Debug\RecruitmentLineManager.Zest.Common.dll
+G:\Zest Project\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\bin\Debug\RecruitmentLineManager.Zest.Common.pdb
+G:\Zest Project\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\bin\Debug\Newtonsoft.Json.dll
+G:\Zest Project\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\bin\Debug\Newtonsoft.Json.xml
+G:\Zest Project\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\obj\Debug\RecruitmentPortal.Zest.Common.csproj.CoreCompileInputs.cache
+G:\Zest Project\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\obj\Debug\RecruitmentLineManager.Zest.Common.dll
+G:\Zest Project\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\obj\Debug\RecruitmentLineManager.Zest.Common.pdb
+G:\Zest Project\RecruitmentLineManager\RecruitmentLineManager.Zest.Common\obj\Debug\RecruitmentPortal.Zest.Common.csprojResolveAssemblyReference.cache
+E:\Zest Project\Source Code\Aarti Source Code\RecruitmentLineManager (2)\RecruitmentPortal\RecruimentPortal.Zest.Common\bin\Debug\RecruitmentLineManager.Zest.Common.dll
+E:\Zest Project\Source Code\Aarti Source Code\RecruitmentLineManager (2)\RecruitmentPortal\RecruimentPortal.Zest.Common\bin\Debug\RecruitmentLineManager.Zest.Common.pdb
+E:\Zest Project\Source Code\Aarti Source Code\RecruitmentLineManager (2)\RecruitmentPortal\RecruimentPortal.Zest.Common\bin\Debug\Newtonsoft.Json.dll
+E:\Zest Project\Source Code\Aarti Source Code\RecruitmentLineManager (2)\RecruitmentPortal\RecruimentPortal.Zest.Common\bin\Debug\Newtonsoft.Json.xml
+E:\Zest Project\Source Code\Aarti Source Code\RecruitmentLineManager (2)\RecruitmentPortal\RecruimentPortal.Zest.Common\obj\Debug\RecruitmentPortal.Zest.Common.csprojResolveAssemblyReference.cache
+E:\Zest Project\Source Code\Aarti Source Code\RecruitmentLineManager (2)\RecruitmentPortal\RecruimentPortal.Zest.Common\obj\Debug\RecruitmentPortal.Zest.Common.csproj.CoreCompileInputs.cache
+E:\Zest Project\Source Code\Aarti Source Code\RecruitmentLineManager (2)\RecruitmentPortal\RecruimentPortal.Zest.Common\obj\Debug\RecruitmentLineManager.Zest.Common.dll
+E:\Zest Project\Source Code\Aarti Source Code\RecruitmentLineManager (2)\RecruitmentPortal\RecruimentPortal.Zest.Common\obj\Debug\RecruitmentLineManager.Zest.Common.pdb
+E:\Zest Project\Source Code\Aarti Source Code\RecruitmentLineManager (2)\RecruitmentPortal\RecruitmentPortal.Zest.Common\bin\Debug\RecruitmentPortal.Zest.Common.dll
+E:\Zest Project\Source Code\Aarti Source Code\RecruitmentLineManager (2)\RecruitmentPortal\RecruitmentPortal.Zest.Common\bin\Debug\RecruitmentPortal.Zest.Common.pdb
+E:\Zest Project\Source Code\Aarti Source Code\RecruitmentLineManager (2)\RecruitmentPortal\RecruitmentPortal.Zest.Common\bin\Debug\Newtonsoft.Json.dll
+E:\Zest Project\Source Code\Aarti Source Code\RecruitmentLineManager (2)\RecruitmentPortal\RecruitmentPortal.Zest.Common\bin\Debug\Newtonsoft.Json.xml
+E:\Zest Project\Source Code\Aarti Source Code\RecruitmentLineManager (2)\RecruitmentPortal\RecruitmentPortal.Zest.Common\obj\Debug\RecruitmentPortal.Zest.Common.csproj.CoreCompileInputs.cache
+E:\Zest Project\Source Code\Aarti Source Code\RecruitmentLineManager (2)\RecruitmentPortal\RecruitmentPortal.Zest.Common\obj\Debug\RecruitmentPortal.Zest.Common.dll
+E:\Zest Project\Source Code\Aarti Source Code\RecruitmentLineManager (2)\RecruitmentPortal\RecruitmentPortal.Zest.Common\obj\Debug\RecruitmentPortal.Zest.Common.pdb
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\RecruitmentPortal\RecruitmentPortal.Zest.Common\bin\Debug\RecruitmentPortal.Zest.Common.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\RecruitmentPortal\RecruitmentPortal.Zest.Common\bin\Debug\RecruitmentPortal.Zest.Common.pdb
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\RecruitmentPortal\RecruitmentPortal.Zest.Common\bin\Debug\Newtonsoft.Json.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\RecruitmentPortal\RecruitmentPortal.Zest.Common\bin\Debug\Newtonsoft.Json.xml
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\RecruitmentPortal\RecruitmentPortal.Zest.Common\obj\Debug\RecruitmentPortal.Zest.Common.dll
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\RecruitmentPortal\RecruitmentPortal.Zest.Common\obj\Debug\RecruitmentPortal.Zest.Common.pdb
+E:\MANALI\SEM 8\zest_2018\PROJECT\SVN\RecruitmentPortal\RecruitmentPortal.Zest.Common\obj\Debug\RecruitmentPortal.Zest.Common.csprojResolveAssemblyReference.cache
+C:\RecruitmentPortal\trunk\RecruitmentPortal\RecruitmentPortal.Zest.Common\bin\Debug\RecruitmentPortal.Zest.Common.dll
+C:\RecruitmentPortal\trunk\RecruitmentPortal\RecruitmentPortal.Zest.Common\bin\Debug\RecruitmentPortal.Zest.Common.pdb
+C:\RecruitmentPortal\trunk\RecruitmentPortal\RecruitmentPortal.Zest.Common\bin\Debug\Newtonsoft.Json.dll
+C:\RecruitmentPortal\trunk\RecruitmentPortal\RecruitmentPortal.Zest.Common\bin\Debug\Newtonsoft.Json.xml
+C:\RecruitmentPortal\trunk\RecruitmentPortal\RecruitmentPortal.Zest.Common\obj\Debug\RecruitmentPortal.Zest.Common.csprojResolveAssemblyReference.cache
+C:\RecruitmentPortal\trunk\RecruitmentPortal\RecruitmentPortal.Zest.Common\obj\Debug\RecruitmentPortal.Zest.Common.csproj.CoreCompileInputs.cache
+C:\RecruitmentPortal\trunk\RecruitmentPortal\RecruitmentPortal.Zest.Common\obj\Debug\RecruitmentPortal.Zest.Common.dll
+C:\RecruitmentPortal\trunk\RecruitmentPortal\RecruitmentPortal.Zest.Common\obj\Debug\RecruitmentPortal.Zest.Common.pdb
